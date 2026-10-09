@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Dream Trip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2>Dream Trip ✈️</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="package.html">Packages</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Book Your Trip ✈️</h1>
+    <p>Fill in your travel details below.</p>
+
+    <form>
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Phone Number:</label>
+        <input type="tel" placeholder="Enter your phone number"
+               pattern="[0-9]{10}" required>
+
+        <label>Choose Destination:</label>
+        <select required>
+            <option value="">Select a place</option>
+            <option>Ooty</option>
+            <option>Goa</option>
+            <option>Kerala</option>
+        </select>
+
+        <label>Travel Date:</label>
+        <input type="date" required>
+
+        <label>Number of People:</label>
+        <input type="number" min="1" placeholder="Enter people count" required>
+
+        <button type="submit">Submit Booking</button>
+    </form>
+
+</body>
+</html>
